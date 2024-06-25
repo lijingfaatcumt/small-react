@@ -1,0 +1,26 @@
+{
+    "sourceFile": "vite.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1719314981265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1719314986714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n // https://vitejs.dev/config/\n export default defineConfig({\n   plugins: [],\n   esbuild: {\n-    jsxInject: `import { jsx } from 'react/'`,\n+    jsxInject: `import { jsx } from 'react/jsx-runtime'`,\n     jsxFactory: \"jsx\",\n   },\n   resolve: {\n     alias: {\n"
+                },
+                {
+                    "date": 1719314994158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n // https://vitejs.dev/config/\n export default defineConfig({\n   plugins: [],\n   esbuild: {\n-    jsxInject: `import { jsx } from 'react/jsx-runtime'`,\n+    jsxInject: `import jsx from 'react/jsx-runtime'`,\n     jsxFactory: \"jsx\",\n   },\n   resolve: {\n     alias: {\n"
+                }
+            ],
+            "date": 1719314981265,
+            "name": "Commit-0",
+            "content": "import { defineConfig } from \"vite\";\n// import react from \"@vitejs/plugin-react\";\nimport path from \"path\";\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [],\n  esbuild: {\n    jsxInject: `import { jsx } from 'react/'`,\n    jsxFactory: \"jsx\",\n  },\n  resolve: {\n    alias: {\n      react: path.resolve(__dirname, \"./packages/react\"),\n    },\n  },\n  build: {\n    rollupOptions: {\n      input: {\n        main: path.resolve(__dirname, \"./src/main.tsx\"),\n      },\n    },\n  },\n});\n"
+        }
+    ]
+}

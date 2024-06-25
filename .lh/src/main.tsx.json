@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/main.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1719300116133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1719300116133,
+            "name": "Commit-0",
+            "content": "const div = (\n  <div ref=\"33\">\n    <span ref=\"44\" key=\"55\">\n      111\n    </span>\n    <span>222</span>\n  </div>\n);\nconsole.log(div, \"div\");\n"
+        }
+    ]
+}
